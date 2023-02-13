@@ -52,5 +52,6 @@ def solution():
     shop_list = get_shop_list_by_dishes(recipes_dict, dishes_list, person_count)
     print("\nСписок покупок:")
     print(shop_list)
+    
 
 solution()
