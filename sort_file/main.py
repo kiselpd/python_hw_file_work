@@ -11,7 +11,6 @@ def get_files_list(name_dir: str) -> list: #Возвращает список в
     for file in content:
         if os.path.isfile(os.path.join(name_dir, file)) and file.endswith(".txt"):
             txt_files.append(os.path.join(name_dir, file))
-
     return txt_files
 
 
@@ -21,7 +20,6 @@ def get_lines_dict(files_list: list) -> dict: #Возвращает словар
     for file in files_list:
         with open(file, "rt") as tmp_file:
             files_dict[file] = tmp_file.readlines()
-
     return files_dict
 
 
